@@ -6,6 +6,8 @@ public class App {
         objeto1.atribuicao();
         objeto1.atribuicao();
         objeto1.relacionais();
+        objeto1.logicos();
+        
     }
 }
 
