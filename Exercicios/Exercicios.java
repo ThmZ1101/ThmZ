@@ -47,32 +47,67 @@ public class Exercicios {
         double custo = quantidade*preco;
         System.out.println("O custo total será: R$"+custo);
     }
-    public void exe5(){
+    public void exe5() {
         System.out.println("Infomer o primeiro numero: ");
         double n1 = sc.nextDouble();
         System.out.println("Infomer o segundo numero: ");
         double n2 = sc.nextDouble();
         System.out.println("Infomer o terceiro numero: ");
         double n3 = sc.nextDouble();
-        double maior,menor,meio;
-        if(n1>n2 && n1>n3 ){
-            maior=n1;
-        }else if(n2>n3 && n2<n3){
-            meio=n2;
-            menor=n3;
-            //n1 maior n2 meio n3 menor
-        }if(n2>n1 && n2>n3){
-            maior=n2;
-        }else if(n1<n2 && n1>n3){
-            meio=n1;
-            menor=n3;
-            //n2 maior n1 meio n3 menor
-        }if(n1>n2 &&n1>n3){
-            maior=n1;
-        }else if(n3>n2 && n3<n1){
-            meio=n3;
-            menor=n2;
-            //n1 maior n3 meio n2 menor
+        double maior = 0;
+        double menor = 0;
+        double meio = 0;
+        if (n1 > n2 && n1 > n3 && n2 > n3) {
+            maior = n1;
+            meio = n2;
+            menor = n3;
+            // n1 maior n2 meio n3 menor
+        }
+        if (n2 > n1 && n2 > n3 && n1 > n3) {
+            maior = n2;
+            meio = n1;
+            menor = n3;
+            // n2 maior n1 meio n3 menor
+        }
+        if (n1 > n2 && n1 > n3 && n3 > n2) {
+            maior = n1;
+            meio = n3;
+            menor = n2;
+            // n1 maior n3 meio n2 menor
+        }
+        if (n2 > n3 && n2 > n1 && n3 > n1) {
+            maior = n2;
+            meio = n3;
+            menor = n1;
+            // n2 maior n3 meio n1 menor
+        }
+        if (n3 > n1 && n3 > n1 && n2 > n1) {
+            maior = n3;
+            meio = n2;
+            menor = n1;
+            // n3 maior n2 menio n1 menor
+        }
+        if (n3 > n1 && n3 > n2 && n1 > n2) {
+            maior = n3;
+            meio = n1;
+            menor = n2;
+        }
+        System.out.println("Maior: " + maior + "Meio: " + meio + "Menor: " + menor);
+    }
+
+    public void exe6() {
+        System.out.println("Qual seu genero");
+        String genero = sc.nextLine();
+        System.out.println("Informe sua altura:");
+        double altura = sc.nextDouble();
+        String h = "homem";
+        double p;
+        if (h.equals(genero)) {
+            p = (72.7 * altura) - 58;
+            System.out.println("O seu peso ideal é :" + p);
+        } else {
+            p = (62.1 * altura) - 44.7;
+            System.out.println("O seu peso ideal é :" + p);
         }
     }
 }
