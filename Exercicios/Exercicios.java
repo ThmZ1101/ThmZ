@@ -39,7 +39,7 @@ public class Exercicios {
         System.out.println("Informe a quantidade de maças:");
         double quantidade = sc.nextDouble();
         double preco;
-        if(quantidade==12){
+        if(quantidade>=12){
             preco = 0.25;
         }else{
             preco = 0.30;

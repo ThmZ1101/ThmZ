@@ -82,6 +82,7 @@ public class Extras {
             System.out.println("O valor do aumento: " + aumento + "R$");
             System.out.println("O novo salário, após o aumento: " + Sf + "R$");
         }
+        
     }
 
     public void exe5() {
