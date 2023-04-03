@@ -1,0 +1,10 @@
+exemplo 1
+calcular a nota(2) e frequencia de um aluno
+  1. Ler primeira e segunda nota
+  2. Calcular a media
+  3. mostrar a media do aluno
+  4. ler o total de aulas dadas
+  5. ler o total de faltas do aluno
+  6. calcular a porcentagem de frequencia
+  7. mostrar a porcentagem
+  8. se media>=50 e frequencia>=75 então mostre aluno aprovado se não mostre reprovado
