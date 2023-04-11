@@ -1,29 +1,8 @@
-package Algoritimo;
-
+package Binario;
 import java.util.Scanner;
 
-public class algo {
+public class Algo {
     Scanner sc = new Scanner(System.in);
-
-    public void calc() {
-        System.out.println("Primeira nota :");
-        double n1 = sc.nextDouble();
-        System.out.println("Segunda nota: ");
-        double n2 = sc.nextDouble();
-        double media = (n1 + n2) / 2;
-        System.out.println("A media do aluno é :" + media);
-        System.out.println("Total de aulas dadas :");
-        double tt = sc.nextDouble();
-        System.out.println("Total de faltas do aluno :");
-        double falta = sc.nextDouble();
-        double pre = (tt - falta) * 100 / tt;
-        System.out.println("O aluno esve presente em " + pre + " aulas");
-        if (media >= 50 && pre >= 75) {
-            System.out.println("O aluno esta aprovado");
-        } else {
-            System.out.println("O aluno esta repovado");
-        }
-    }
 
     public void binario() {
         System.out.println("1°");
@@ -62,5 +41,49 @@ public class algo {
         }
         int res = v1+v2+v3+v4+v5+v6+v7+v8;
         System.out.println("O valor da sequencia é: "+res);
+    }
+    public void decimal(){
+        System.out.println("Decimal:");
+        int d = sc.nextInt();
+        int v1 = 0; int v2 = 0; int v3 = 0; int v4 = 0; int v5 = 0; int v6 = 0; int v7 = 0; int v8 = 0;
+        int d1 = d/2;
+        int d2 = d1/2;
+        int d3 = d2/2;
+        int d4 = d3/2;
+        int d5 = d4/2;
+        int d6 = d5/2;
+        int d7 = d6/2;
+        if(d % 2 == 1){
+            v1 = 1;
+        }
+        if(d1 % 2 ==1){
+            v2 = 1;
+        }
+        if(d2 % 2 ==1){
+            v3 = 1;
+        }
+        if(d3 % 2 ==1){
+            v4 = 1;
+        }
+        if(d4 % 2 ==1){
+            v5 = 1;
+        }
+        if(d5 % 2 ==1){
+            v6 = 1;
+        }
+        if(d6 % 2 ==1){
+            v7 = 1;
+        }
+        if(d7 % 2 ==1){
+            v8 = 1;
+        }
+        System.out.println(v8+""+v7+""+v6+""+v5+""+v4+""+v3+""+v2+""+v1);
+    }
+    public void dec(){
+        System.out.println("A");
+        int n  = sc.nextInt();
+        int n1 = n/2;
+        System.out.println(n1);
+
     }
 }
